@@ -1,5 +1,11 @@
+import Register from "./pages/Register";
+import "./style.css";
 function App() {
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <Register />
+    </div>
+  );
 }
 
 export default App;
