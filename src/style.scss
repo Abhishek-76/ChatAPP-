@@ -13,6 +13,16 @@
   padding: 20px 60px;
   border-radius: 10px;
   align-items: center;
+
+  .logo {
+    color: #5d5b8d;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .title {
+    color: #5d5b8d;
+    font-size: 12px;
+  }
   form {
     display: flex;
     flex-direction: column;
@@ -26,18 +36,18 @@
         color: rgba(175, 175, 175);
       }
     }
+    button {
+      background-color: #7b96ec;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
   }
-  .logo {
-    color: #5d5b8d;
-    font-weight: bold;
-    font-size: 24px;
-  }
-  .title {
+  p {
     color: #5d5b8d;
     font-size: 12px;
-  }
-  .formWrapper button {
-    background-color: #7b96ec;
-    color: white;
+    margin: 10px;
   }
 }
