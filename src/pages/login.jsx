@@ -1,5 +1,4 @@
 import React from "react";
-import Add from "../img/addAvatar.png";
 const Login = () => {
   return (
     <div className="formContainer">
@@ -9,7 +8,6 @@ const Login = () => {
         <form>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="email" />
-
           <button>Sign in</button>
         </form>
         <p>You don't have an account? Register</p>
