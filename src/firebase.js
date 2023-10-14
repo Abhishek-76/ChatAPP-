@@ -4,12 +4,12 @@ import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDyL6iK0LjvKuqJO4kXL9nTFhXNH2tvpkM",
-  authDomain: "gambarachats.firebaseapp.com",
-  projectId: "gambarachats",
-  storageBucket: "gambarachats.appspot.com",
-  messagingSenderId: "97628560898",
-  appId: "1:97628560898:web:df722e7abf4c19188e511b",
+  apiKey: "AIzaSyC12BTDkU7q9-D_vAQ--ttsQ-WpbtmHHu4",
+  authDomain: "chats-34193.firebaseapp.com",
+  projectId: "chats-34193",
+  storageBucket: "chats-34193.appspot.com",
+  messagingSenderId: "548927473379",
+  appId: "1:548927473379:web:c387f93e89b1a119a3a7d6",
 };
 
 export const app = initializeApp(firebaseConfig);
