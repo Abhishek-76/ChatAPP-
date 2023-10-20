@@ -1,8 +1,8 @@
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import "./style.scss";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import "./style.scss";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
 
@@ -13,12 +13,14 @@ function App() {
     if (!currentUser) {
       return <Navigate to="/login" />;
     }
+
+    return children;
   };
 
   return (
-    <div>
-      <BrowserRouter>
-        <Routes path="/">
+    <BrowserRouter>
+      <Routes>
+        <Route path="/">
           <Route
             index
             element={
@@ -29,9 +31,9 @@ function App() {
           />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
