@@ -3,15 +3,12 @@ import Add from "../img/add.png";
 import More from "../img/more.png";
 import Messages from "./Messages";
 import Input from "./Input";
-import DisplayChatName from "./DisplayChatName";
 
 const Chat = () => {
   return (
     <div className="chat">
       <div className="chatInfo">
-        <span>
-          <DisplayChatName />
-        </span>
+        <span>Messages</span>
         <div className="chatIcons">
           <img src={Cam} alt="" />
           <img src={Add} alt="" />
